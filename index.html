@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+	<div id="ui">
+		<div id="start-screen">
+			<h1>Lights out</h1>
+			<p>press <span>enter</span> to start</p>
+		</div>
+
+		<div id="end-screen">
+			<h2>Chapter Two</h2>
+			<h1>The Watchtower</h1>
+		</div>
+
+		<p id="score"><span id="player-score">0</span>/2</p>
+        
+		<div id="game-overlay">
+                <h3>Clues</h3>
+                <div class="list-container">
+                    <div class="clues">
+                        <div class="clue" tabindex="-1">Old Note</div>
+                        <div class="clue locked" tabindex="-1"></div>
+                        <div class="clue locked" tabindex="-1"></div>
+                        <div class="clue locked" tabindex="-1"></div>
+                    </div>
+                </div>
+
+                <div id="clue-list-content">
+                   
+                    <div class="clue-content">
+                        <div class="clue-info">
+                            <h4>Old Dirty Note</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec faucibus odio. Nullam pharetra est eu rhoncus dapibus. Morbi commodo, est vitae lobortis mattis, augue nisl tristique mauris, mattis tempor justo ex vitae magna. Fusce et turpis hendrerit, blandit felis et, finibus sapien.</p>
+                        </div>
+                        <div class="clue-image" id="clue1"></div>
+                    </div>
+                    
+                    <div class="clue-content">
+                        <div class="clue-info">
+                            <h4>Clue locked</h4>
+                            <p>You have not found this clue, yet.</p>
+                        </div>
+                        <div class="clue-image locked"></div>
+                    </div>
+                    
+                    <div class="clue-content">
+                        <div class="clue-info">
+                            <h4>Clue locked</h4>
+                            <p>You have not found this clue, yet.</p>
+                        </div>
+                        <div class="clue-image locked"></div>  
+                    </div>
+                    
+                    <div class="clue-content">
+                        <div class="clue-info">
+                            <h4>Clue locked</h4>
+                            <p>You have not found this clue, yet.</p>
+                        </div>
+                        <div class="clue-image locked"></div>  
+                    </div>
+                    
+                </div>
+            </div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+	<script src="js/p5.play.js"></script>
+	<script src="js/p5.sound.js"></script>
+    <script src="js/script.js"></script>
+	<script src="js/sketch.js"></script>
+	
+</body>
+
+</html>
